@@ -45,6 +45,9 @@ function game() {
     box_pheptinh.innerHTML = baitoan;
     dapanDung = dapan;
     dapanSai = Math.floor(Math.random() * 100);
+    while(dapanSai==dapanDung){
+        dapanSai = Math.floor(Math.random() * 100);
+    }
     viTriDung = Math.floor(Math.random() * 2);
     if (viTriDung == 0) {
         cautraloi_1.innerHTML = dapanDung;
